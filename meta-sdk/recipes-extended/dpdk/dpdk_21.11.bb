@@ -37,6 +37,7 @@ do_install:append(){
             install -m 0755 ${dirname} ${D}/${datadir}/dpdk/examples/
         fi
     done
+    cp -rf ${S}/nxp/* ${D}/${datadir}/dpdk/
 }
 
 PACKAGES =+ "${PN}-examples ${PN}-tools"
@@ -47,7 +48,7 @@ FILES:${PN} = "${bindir}/dpdk-testpmd \
 RDEPENDS:${PN} += "pciutils python3-core"
 
 FILES:${PN}-examples = " \
-                        ${datadir}/dpdk/examples/* \
+                        ${datadir}/dpdk/* \
 "
 RDEPENDS:${PN}-examples += "bash"
 
