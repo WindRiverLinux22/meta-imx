@@ -10,6 +10,7 @@ SRC_URI = " \
 SRCREV = "87ddd80953835eb29027d1d5a12044a08e809e40" 
 
 PLATFORM:mx8ulp = "IMX8ULP"
+PLATFORM:mx6sx = "IMX6S"
 
 do_install:append () {
     # Remove .go file for Android
