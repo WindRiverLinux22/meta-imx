@@ -28,7 +28,7 @@ S = "${WORKDIR}/git"
 
 inherit meson pkgconfig
 
-PACKAGECONFIG ??= "protobuf python3 tensorflow-lite "
+PACKAGECONFIG ??= "tensorflow-protobuf python3 tensorflow-lite "
 
 PACKAGECONFIG[flatbuf] = "\
 	-Dflatbuf-support=enabled, \
