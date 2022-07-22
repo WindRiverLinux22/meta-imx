@@ -22,7 +22,7 @@ SRC_URI[sha256sum] = "96d8a6413ba9394fbec1217aeef63741a729d476a505a797c1d5337d8f
 
 S = "${WORKDIR}/gst-plugins-base-${PV}"
 
-DEPENDS += "iso-codes util-linux zlib"
+DEPENDS += "iso-codes util-linux zlib linux-imx-headers"
 
 inherit gobject-introspection
 
@@ -129,6 +129,6 @@ PACKAGECONFIG[viv-fb] = ",,virtual/libgles2"
 OPENGL_WINSYS:append = "${@bb.utils.contains('PACKAGECONFIG', 'viv-fb', ' viv-fb', '', d)}"
 EXTRA_OEMESON += "-Dc_args="${CFLAGS} -I${STAGING_INCDIR_IMX}""
 
-COMPATIBLE_MACHINE = "(imx-nxp-bsp)"
+COMPATIBLE_MACHINE = "(imx-nxp-bsp|mx6|mx7|mx8)"
 
 ########### End of i.MX overrides #########

@@ -94,6 +94,6 @@ SRCREV = "7afc123bc6974d68795f97466eb83ec7a093fb9b"
 
 S = "${WORKDIR}/git"
 
-COMPATIBLE_MACHINE = "(imx-nxp-bsp)"
+COMPATIBLE_MACHINE = "(imx-nxp-bsp|mx6|mx7|mx8)"
 
 ########### End of i.MX overrides #########
