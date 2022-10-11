@@ -32,4 +32,6 @@ FILES:${PN} += "/unit_tests"
 
 RDEPENDS:${PN} += "imx-vpu-hantro-daemon"
 
+DEPENDS += "linux-imx-headers"
+
 COMPATIBLE_MACHINE = "(mx8mq-nxp-bsp|mx8mm-nxp-bsp|mx8mp-nxp-bsp)"
