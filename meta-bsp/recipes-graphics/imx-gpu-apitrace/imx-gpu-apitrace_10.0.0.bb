@@ -1,5 +1,3 @@
-require recipes-graphics/imx-gpu-apitrace/imx-gpu-apitrace_10.0.0.bb
-
 APITRACE_SRC ?= "git://github.com/nxp-imx/apitrace-imx.git;protocol=https"
 SRCBRANCH = "imx_10.0"
 SRC_URI = "${APITRACE_SRC};branch=${SRCBRANCH} \
