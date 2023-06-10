@@ -1,4 +1,4 @@
-require recipes-graphics/imx-gpu-apitrace/imx-gpu-apitrace_10.0.0.bb
+require ${LAYER_PATH_freescale-layer}/recipes-graphics/imx-gpu-apitrace/imx-gpu-apitrace_10.0.0.bb
 
 APITRACE_SRC ?= "git://github.com/nxp-imx/apitrace-imx.git;protocol=https"
 SRCBRANCH = "imx_10.0"
